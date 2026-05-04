@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffdf5; /* Cream */
+  --foreground: #2d1a12; /* Deep Earthy Brown */
+  --primary: #8b0000; /* Deep Red / Maroon */
+  --secondary: #ff9933; /* Marigold Saffron */
+  --accent: #d4af37; /* Metallic Gold */
+  --card: #ffffff;
+  --card-foreground: #2d1a12;
+  --border: #e5e1d1;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Outfit', 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+@theme {
+  --font-sans: 'Outfit', ui-sans-serif, system-ui;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-[#58181a];
+  }
+}
+
+@layer components {
+  .traditional-card {
+    @apply bg-white border-2 border-[#d4af37]/20 rounded-[2rem] shadow-xl shadow-[#d4af37]/5 overflow-hidden;
+  }
+  
+  .indian-gradient {
+    background: linear-gradient(135deg, #8b0000 0%, #b32e2e 100%);
+  }
+  
+  .gold-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#d4af37] via-[#f9e29c] to-[#b8860b];
+  }
+
+  .mandala-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z' fill='%23d4af37' fill-opacity='0.05'/%3E%3C/svg%3E");
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8860b;
+}
