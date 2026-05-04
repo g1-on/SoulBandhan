@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SoulBandhan - Premium Indian Matrimony 🕉️
 
-## Getting Started
+SoulBandhan is a high-end, inclusive matrimony platform designed for all Indian communities. It combines traditional heritage aesthetics with modern functionality, offering a sacred space for finding life partners.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Heritage UI**: Premium Traditional Indian design (Maroon, Gold, and Silk).
+- **Inclusive Search**: Support for all major Indian religions and communities.
+- **Vedic Kundali Matching**: Deep Jyotish analysis including Ashtakoota, Nakshatra, and Manglik Dosh (localized in Hindi).
+- **Fully Functional Demo**: Complete navigation across Home, Search, Profile, Premium, and Help pages.
+- **Responsive Design**: Optimized for a premium experience on all devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[Coming Soon / Deploying to Vercel]
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Frontend**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS 4
+- **Astrology**: Vedic Jyotish Algorithms (Demo)
+- **Icons**: Lucide React / Custom SVG Heritage Motifs
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![SoulBandhan Hero](https://github.com/g1-on/SoulBandhan/raw/main/public/demo_hero.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Getting Started
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/g1-on/SoulBandhan.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Built with ❤️ for Indian Traditions.
