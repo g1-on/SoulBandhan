@@ -7,6 +7,12 @@ const MOCK_PROFILES = {
   "3": { name: "Sanya Malhotra", age: 25, location: "Pune", occupation: "Fashion Designer", community: "Punjabi", education: "B.Des, NIFT", height: "5'6\"", income: "15L+ PA", bio: "Creative soul with a passion for traditional Indian wear. Family is my priority. Looking for a supportive partner.", religion: "Sikh", motherTongue: "Punjabi" },
 };
 
+export async function generateStaticParams() {
+  return Object.keys(MOCK_PROFILES).map((id) => ({
+    id: id,
+  }));
+}
+
 export default function ProfilePage({ params }: { params: { id: string } }) {
   const profile = MOCK_PROFILES[params.id as keyof typeof MOCK_PROFILES] || MOCK_PROFILES["1"];
 
